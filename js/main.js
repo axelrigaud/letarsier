@@ -50,6 +50,26 @@ $(document).ready(function(){
   setHrWaypoint('shows-hr');
   setHrWaypoint('ep-hr');
 
+  var socialWaypoint = new Waypoint({
+    element: document.getElementById('nav-list'),
+    handler: triggerSocialItems,
+    offset: '100%'
+  });
+
+  var offsetSocial= 100;
+  function triggerSocialItems() {
+    $('#facebook').addClass('appear-from-bottom');
+    setTimeout(function(){
+      $('#instagram').addClass('appear-from-bottom');
+    },offsetSocial);
+    setTimeout(function(){
+      $('#youtube').addClass('appear-from-bottom');
+    },offsetSocial*2);
+    setTimeout(function(){
+      $('#soundcloud').addClass('appear-from-bottom');
+    },offsetSocial*3);
+  }
+
   //about
   $aboutLeft = $('.about-left');
   $aboutPic = $('.about-pic-container');
