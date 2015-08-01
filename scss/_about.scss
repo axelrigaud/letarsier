@@ -1,0 +1,14 @@
+//about
+
+.about-text{
+  font-style: italic;
+  line-height: 27px;
+  font-size: 16px
+}
+
+.about-pic-container{
+  background: url('../img/lake2-retina.jpg') center center;
+  @include background-size(cover);
+  height: 266px;
+}
+

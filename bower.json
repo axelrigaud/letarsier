@@ -1,0 +1,24 @@
+{
+  "name": "tarsier",
+  "version": "0.0.0",
+  "homepage": "https://github.com/axelrigaud/tarsier",
+  "authors": [
+    "Axel Rigaud <axel.rigaud@jobteaser.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animsition": "~3.5.2",
+    "jquery.easing": "~1.3.1",
+    "bootstrap": "~3.3.5",
+    "handlebars": "~3.0.3",
+    "swiper": "~3.1.0",
+    "jquery.mb.ytplayer": "~2.9.4"
+  }
+}

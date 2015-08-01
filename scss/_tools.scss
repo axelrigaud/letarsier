@@ -1,0 +1,16 @@
+@mixin border-image($from, $to, $width) {
+  border-image: linear-gradient(left, $from, $to);
+  border-image-slice: 1;
+  border-image-width: $width;
+}
+
+@mixin font-gradient($from, $to, $dir) {
+  background: -webkit-linear-gradient($dir, $from, $to);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.clearfix:after {
+  content:"";
+  display:table;
+  clear:both;
+}

@@ -1,0 +1,26 @@
+html, body, ul{
+  margin:0;
+  padding:0;
+  margin:0;
+  font-family: 'Roboto', sans-serif;
+  color:#2D2D2D;
+}
+html,body{
+  height: 100%;
+}
+
+ul{
+  list-style-type: none;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+section {
+  padding-top: 50px;
+}
+h2 {
+  @media (min-width:1000px) {
+    font-size: 44px;
+  }
+}
