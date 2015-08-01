@@ -21,11 +21,19 @@ ul {
   text-transform: uppercase; }
 
 section {
-  padding-top: 50px; }
+  padding-top: 10px;
+  padding-bottom: 30px; }
 
 @media (min-width: 1000px) {
   h2 {
     font-size: 44px; } }
+
+.dark {
+  background: #000;
+  color: #FFF; }
+
+.custom-hr.dark {
+  border-color: #FFF; }
 
 .hero {
   padding-top: 0; }
@@ -123,6 +131,9 @@ section {
   background: url("../img/lake2-retina.jpg") center center;
   background-size: cover;
   height: 266px; }
+
+.videos {
+  width: 100%; }
 
 .video-figure {
   position: relative;

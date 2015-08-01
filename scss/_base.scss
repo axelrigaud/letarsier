@@ -17,10 +17,19 @@ ul{
   text-transform: uppercase;
 }
 section {
-  padding-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 h2 {
   @media (min-width:1000px) {
     font-size: 44px;
   }
+}
+
+.dark {
+  background: #000;
+  color: #FFF;
+}
+.custom-hr.dark {
+  border-color: #FFF;
 }
