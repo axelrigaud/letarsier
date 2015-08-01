@@ -5,7 +5,7 @@
 
 .swiper-slide {
   background-position: center;
-  @include background-size(cover);
+  background-size: cover;
   .container {
     height: 100%;
   }

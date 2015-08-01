@@ -8,7 +8,7 @@
 
 .about-pic-container{
   background: url('../img/lake2-retina.jpg') center center;
-  @include background-size(cover);
+  background-size: cover;
   height: 266px;
 }
 

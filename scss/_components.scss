@@ -8,8 +8,8 @@
   span {
     color: #2d2d2d;
   }
-  @include transition(0.2s);
-  @include border-radius(3px);
+  transition: 0.2s;
+  border-radius: 3px;
 }
 
 .ghost-button:hover {

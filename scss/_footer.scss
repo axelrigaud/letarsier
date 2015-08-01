@@ -41,7 +41,7 @@ display:inline-block;
   display:block;
   width:40px;
   fill:#2D2D2D;
-  @include transition(0.1s);
+  transition: 0.1s;
 }
 .facebook:hover{
   fill:#3b5998;

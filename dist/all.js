@@ -2639,10 +2639,8 @@ videos = [
         youtubeId: 'apiroDHxoz0'
     }
 ];
+
 $(document).ready(function(){
-  source = $('#videos-template').html();
-  template = Handlebars.compile(source);
-  result = template(videos);
   
   $('.fa-angle-down').on('click',function(e){
     e.preventDefault;
@@ -2652,30 +2650,7 @@ $(document).ready(function(){
   });
   
   
-  $('#videos-list').html(result);
 
-  $('.full-width-video').fitVids();
-
-  //emerge first play only
-  $('.big-video-preview-container').on('click',function(){
-    var iframe_code = '<iframe src="http://www.youtube.com/v/3DkjC_Anyc0&autoplay=1" frameborder="0" allowfullscreen></iframe>';
-    $('.full-width-video').html(iframe_code);
-    $('.full-width-video').fitVids();
-  })
-  
-  //other videos
-  $('.video-link').on('click', function(e){
-    e.preventDefault();
-    $('html, body').animate({
-        scrollTop: $(".videos").offset().top
-    }, 500, "easeInCubic");
-    var url = $(this).attr('href');
-    url = url.replace("watch?v=", "v/");
-    var iframe_code = '<iframe src="'+url+'&autoplay=1" frameborder="0" allowfullscreen></iframe>';
-    $('.full-width-video').html(iframe_code);
-    $('.full-width-video').fitVids();
-    
-  });
 
   //swiper
   var $window = $(window);
@@ -2706,26 +2681,17 @@ $(document).ready(function(){
         }
     },
   });
+    $ytplayer = $(".player")
+    $ytplayer.YTPlayer();
 
-  $youtubeBgPlayerEl = $('.yt-bg-player');
-  console.log($youtubeBgPlayerEl.attr('data-video'))
-  $youtubeBgPlayerEl.mb_YTPlayer({
-            videoURL: $youtubeBgPlayerEl.attr('video'),
-            mute: false,
-            // ratio: ytbgRatio,
-            // quality: ytbgQuality,
-            // opacity: ytbgOpacity,
-            containment: 'self',
-            // optimizeDisplay: ytbgOptimize,
-            // loop: ytbgLoop,
-            vol: 100,
-            // startAt: ytbgStart,
-            // stopAt: ytbgStop,
-            autoplay: true,
-            // realfullscreen: ytbgFullScreen,
-            showYTLogo: false,
-            showControls: false
-          });
+  $('.videos-item a').on('click', function(e){
+    e.preventDefault();
+    $ytplayer.YTPChangeMovie({videoURL:$(this).attr('href'),autoPlay:true});
+    //$ytplayer.YTPPlay();
+  })
+
+
+ 
 
 });
 
