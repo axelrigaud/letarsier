@@ -21,8 +21,11 @@ ul {
   text-transform: uppercase; }
 
 section {
-  padding-top: 10px;
-  padding-bottom: 30px; }
+  padding-top: 25px;
+  padding-bottom: 80px; }
+
+section.hero {
+  padding-bottom: 0; }
 
 @media (min-width: 1000px) {
   h2 {
