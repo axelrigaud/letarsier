@@ -134,15 +134,16 @@ section {
 
 .videos {
   width: 100%; }
+  .videos h2, .videos .custom-hr {
+    margin-left: 4%; }
 
 .video-figure {
   position: relative;
   margin: 0;
   height: 163px;
   overflow: hidden;
-  background: #202020; }
+  background-size: cover; }
   .video-figure img {
-    width: 100%;
     height: 217px;
     position: absolute;
     top: -27px;
