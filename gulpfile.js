@@ -28,6 +28,7 @@ gulp.task('css', function() {
     return gulp.src(['bower_components/bootstrap/dist/css/bootstrap.css',
                      'bower_components/jquery.mb.ytplayer/dist/css/jquery.mb.YTPlayer.min.css',
                      'bower_components/swiper/dist/css/swiper.css',
+                     'bower_components/animsition/dist/css/animsition.css',
                       'css/animate.css',
                       'css/style.css',
                       'css/font-awesome.min.css'
