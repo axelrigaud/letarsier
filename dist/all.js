@@ -16930,6 +16930,8 @@ $(document).ready(function(){
     //$ytplayer.YTPPlay();
   })
 
+  $('body').animsition();
+
 
  
 

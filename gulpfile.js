@@ -23,6 +23,19 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('css'));
 });
 
+// Concatenate CSS
+gulp.task('css', function() {
+    return gulp.src(['bower_components/bootstrap/dist/css/bootstrap.css',
+                     'bower_components/jquery.mb.ytplayer/dist/css/jquery.mb.YTPlayer.min.css',
+                     'bower_components/swiper/dist/css/swiper.css',
+                      'css/animate.css',
+                      'css/style.css',
+                      'css/font-awesome.min.css'
+                      ])
+        .pipe(concat('all.css'))
+        .pipe(gulp.dest('css'));
+});
+
 // Install Bower dependecies
 gulp.task('bower', function() { 
     return bower()
@@ -53,4 +66,4 @@ gulp.task('watch', function() {
 });
 
 // Default Task
-gulp.task('default', ['bower', 'scripts', 'sass', 'watch']);
+gulp.task('default', ['bower', 'scripts', 'sass', 'css', 'watch']);
