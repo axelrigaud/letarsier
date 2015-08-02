@@ -31,7 +31,14 @@ gulp.task('bower', function() { 
 
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
-    return gulp.src('js/*.js')
+    return gulp.src(['bower_components/jquery/dist/jquery.js',
+                     'bower_components/animsition/dist/js/jquery.animsition.js',
+                     'bower_components/bootstrap/dist/js/bootstrap.js',
+                     'bower_components/jquery.easing/js/jquery.easing.js',
+                     'bower_components/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js',
+                     'bower_components/swiper/dist/js/swiper.jquery.js',
+                     'js/main.js'
+                     ])
         .pipe(concat('all.js'))
         .pipe(gulp.dest('dist'))
         .pipe(rename('all.min.js'))
