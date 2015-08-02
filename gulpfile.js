@@ -7,6 +7,7 @@ var jshint = require('gulp-jshint'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
+    jade = require('gulp-jade'),
     bower = require('gulp-bower');
 
 // Lint Task
@@ -14,6 +15,18 @@ gulp.task('lint', function() {
     return gulp.src('js/*.js')
         .pipe(jshint())
         .pipe(jshint.reporter('default'));
+});
+
+// Jade
+gulp.task('jade', function() {
+  var YOUR_LOCALS = {};
+ 
+  gulp.src('*.jade')
+    .pipe(jade({
+      locals: YOUR_LOCALS,
+      pretty: true
+    }))
+    .pipe(gulp.dest(''))
 });
 
 // Compile Our Sass
@@ -29,11 +42,12 @@ gulp.task('css', function() {
                      'bower_components/jquery.mb.ytplayer/dist/css/jquery.mb.YTPlayer.min.css',
                      'bower_components/swiper/dist/css/swiper.css',
                      'bower_components/animsition/dist/css/animsition.css',
+                     'bower_components/font-awesome/css/font-awesome.css',
                       'css/animate.css',
                       'css/style.css',
                       'css/font-awesome.min.css'
                       ])
-        .pipe(concat('all.css'))
+        .pipe(concat('vendor.css'))
         .pipe(gulp.dest('css'));
 });
 
@@ -64,7 +78,8 @@ gulp.task('scripts', function() {
 gulp.task('watch', function() {
     gulp.watch('js/*.js', ['lint', 'scripts']);
     gulp.watch('scss/*.scss', ['sass']);
+    gulp.watch('*.jade', ['jade']);
 });
 
 // Default Task
-gulp.task('default', ['bower', 'scripts', 'sass', 'css', 'watch']);
+gulp.task('default', ['bower', 'scripts', 'sass', 'css', 'jade', 'watch']);
