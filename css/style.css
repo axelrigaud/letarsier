@@ -8,7 +8,7 @@ html, body, ul {
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  color: #2D2D2D; }
+  color: #333; }
 
 html, body {
   height: 100%; }
@@ -125,6 +125,9 @@ section.hero {
   @media (min-width: 1000px) {
     .custom-hr {
       width: 200px; } }
+
+#about {
+  background: #f1f1f1; }
 
 .about-text {
   font-style: italic;
