@@ -3,6 +3,10 @@
   display: table;
   clear: both; }
 
+.container-full {
+  margin: 0 auto;
+  width: 100%; }
+
 html, body, ul {
   margin: 0;
   padding: 0;
@@ -27,9 +31,11 @@ section {
 section.hero {
   padding-bottom: 0; }
 
-@media (min-width: 1000px) {
-  h2 {
-    font-size: 44px; } }
+h2 {
+  letter-spacing: 3px; }
+  @media (min-width: 1000px) {
+    h2 {
+      font-size: 34px; } }
 
 .dark {
   background: #000;
@@ -130,14 +136,15 @@ section.hero {
   background: #f1f1f1; }
 
 .about-text {
-  font-style: italic;
-  line-height: 27px;
-  font-size: 16px; }
+  line-height: 20px;
+  font-size: 12px;
+  color: #8B8B8B;
+  letter-spacing: 1px; }
 
 .about-pic-container {
   background: url("../img/lake2-retina.jpg") center center;
   background-size: cover;
-  height: 266px; }
+  height: 300px; }
 
 .videos {
   width: 100%; }

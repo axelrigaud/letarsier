@@ -11829,12 +11829,16 @@ button.swiper-pagination-bullet {
   display: table;
   clear: both; }
 
+.container-full {
+  margin: 0 auto;
+  width: 100%; }
+
 html, body, ul {
   margin: 0;
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  color: #2D2D2D; }
+  color: #333; }
 
 html, body {
   height: 100%; }
@@ -11855,7 +11859,7 @@ section.hero {
 
 @media (min-width: 1000px) {
   h2 {
-    font-size: 44px; } }
+    font-size: 34px; } }
 
 .dark {
   background: #000;
@@ -11952,15 +11956,17 @@ section.hero {
     .custom-hr {
       width: 200px; } }
 
+#about {
+  background: #f1f1f1; }
+
 .about-text {
-  font-style: italic;
-  line-height: 27px;
-  font-size: 16px; }
+  line-height: 23px;
+  font-size: 12px; }
 
 .about-pic-container {
   background: url("../img/lake2-retina.jpg") center center;
   background-size: cover;
-  height: 266px; }
+  height: 300px; }
 
 .videos {
   width: 100%; }
