@@ -44,6 +44,11 @@ h2 {
 .custom-hr.dark {
   border-color: #FFF; }
 
+.container.dark {
+  width: 100%; }
+  .container.dark h2, .container.dark .custom-hr {
+    margin-left: 4%; }
+
 .hero {
   padding-top: 0; }
 
@@ -145,11 +150,6 @@ h2 {
   background: url("../img/lake2-retina.jpg") center center;
   background-size: cover;
   height: 300px; }
-
-.videos {
-  width: 100%; }
-  .videos h2, .videos .custom-hr {
-    margin-left: 4%; }
 
 .video-figure {
   position: relative;

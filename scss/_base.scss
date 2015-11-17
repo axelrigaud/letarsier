@@ -37,3 +37,11 @@ h2 {
 .custom-hr.dark {
   border-color: #FFF;
 }
+
+.container.dark {
+  width: 100%;
+  h2, .custom-hr {
+    margin-left: 4%;
+  }
+
+}
