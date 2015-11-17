@@ -25,7 +25,7 @@ videos = [
 $(document).ready(function(){
   
   $('.fa-angle-down').on('click',function(e){
-    e.preventDefault;
+    e.preventDefault();
     $('html, body').animate({
         scrollTop: $("#about").offset().top
     }, 1000, "easeInOutSine");
@@ -39,7 +39,7 @@ $(document).ready(function(){
   var scrHeight = $window.height();
   $('.swiper-slide').css('height', scrHeight);
 
-  $slider =   $('.swiper-wrapper')
+  $slider =   $('.swiper-wrapper');
 
   $slider.find('.slider-caption').each(function(){
         var scapHeight = $(this).outerHeight();
@@ -63,18 +63,21 @@ $(document).ready(function(){
         }
     },
   });
-    $ytplayer = $(".player")
+    $ytplayer = $(".player");
     $ytplayer.YTPlayer();
 
   $('.videos-item a').on('click', function(e){
     e.preventDefault();
     $ytplayer.YTPChangeMovie({videoURL:$(this).attr('href'),autoPlay:true});
     //$ytplayer.YTPPlay();
-  })
+  });
 
   $(window).on("load", function(){
     $('.loader-wrapper').fadeOut(700);
     $('.hero').fadeIn(700);
   });
+
+  //owl carousel
+  $('.owl-carousel').owlCarousel({autoplay:10000, slideSpeed:1000, loop:true, rewindNav: true});
 
 });

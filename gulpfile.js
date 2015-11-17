@@ -43,6 +43,8 @@ gulp.task('css', function() {
                      'bower_components/swiper/dist/css/swiper.css',
                      'bower_components/animsition/dist/css/animsition.css',
                      'bower_components/font-awesome/css/font-awesome.css',
+                     'bower_components/owl-carousel2/dist/assets/owl.carousel.css',
+                     'bower_components/owl-carousel2/dist/assets/owl.theme.default.css',
                       'css/animate.css',
                       'css/style.css',
                       'css/font-awesome.min.css'
@@ -65,6 +67,7 @@ gulp.task('scripts', function() {
                      'bower_components/jquery.easing/js/jquery.easing.js',
                      'bower_components/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js',
                      'bower_components/swiper/dist/js/swiper.jquery.js',
+                     'bower_components/owl-carousel2/dist/owl.carousel.js',
                      'js/main.js'
                      ])
         .pipe(concat('all.js'))
