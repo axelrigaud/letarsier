@@ -310,20 +310,20 @@ footer {
   animation: sk-cubemove 1.8s infinite linear; }
 
 .stick1 {
-  background-color: #e74c3c; }
+  background-color: #2d2926; }
 
 .stick2 {
-  background-color: #3498db;
+  background-color: #4c4845;
   -webkit-animation-delay: -0.9s;
   animation-delay: -0.9s; }
 
 .stick3 {
-  background-color: #2ecc71;
+  background-color: #4c4a44;
   -webkit-animation-delay: -1.35s;
   animation-delay: -1.35s; }
 
 .stick4 {
-  background-color: #f1c40f;
+  background-color: #51534a;
   -webkit-animation-delay: -.45s;
   animation-delay: -.45s; }
 
