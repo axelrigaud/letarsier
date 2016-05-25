@@ -1,5 +1,5 @@
 // Include gulp
-var gulp = require('gulp'); 
+var gulp = require('gulp');
 
 // Include Our Plugins
 var jshint = require('gulp-jshint'),
@@ -20,7 +20,7 @@ gulp.task('lint', function() {
 // Jade
 gulp.task('jade', function() {
   var YOUR_LOCALS = {};
- 
+
   gulp.src('*.jade')
     .pipe(jade({
       locals: YOUR_LOCALS,
@@ -40,7 +40,6 @@ gulp.task('sass', function() {
 gulp.task('css', function() {
     return gulp.src(['bower_components/bootstrap/dist/css/bootstrap.css',
                      'bower_components/jquery.mb.ytplayer/dist/css/jquery.mb.YTPlayer.min.css',
-                     'bower_components/swiper/dist/css/swiper.css',
                      'bower_components/animsition/dist/css/animsition.css',
                      'bower_components/font-awesome/css/font-awesome.css',
                      'bower_components/owl-carousel2/dist/assets/owl.carousel.css',
@@ -66,7 +65,6 @@ gulp.task('scripts', function() {
                      'bower_components/bootstrap/dist/js/bootstrap.js',
                      'bower_components/jquery.easing/js/jquery.easing.js',
                      'bower_components/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js',
-                     'bower_components/swiper/dist/js/swiper.jquery.js',
                      'bower_components/owl-carousel2/dist/owl.carousel.js',
                      'js/main.js'
                      ])

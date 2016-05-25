@@ -23,46 +23,15 @@ videos = [
 ];
 
 $(document).ready(function(){
-  
+
   $('.fa-angle-down').on('click',function(e){
     e.preventDefault();
     $('html, body').animate({
         scrollTop: $("#about").offset().top
     }, 1000, "easeInOutSine");
   });
-  
-  
 
 
-  //swiper
-  var $window = $(window);
-  var scrHeight = $window.height();
-  $('.swiper-slide').css('height', scrHeight);
-
-  $slider =   $('.swiper-wrapper');
-
-  $slider.find('.slider-caption').each(function(){
-        var scapHeight = $(this).outerHeight();
-        var scapSliderHeight = $slider.outerHeight();
-        $(this).css({ top: ( scapSliderHeight - scapHeight ) / 2 + 'px' });
-        });
-
-  var mySwiper = new Swiper('.swiper-container', {
-    speed: 400,
-    autoplay: 4000,
-    effect: "fade",
-    progress: true,
-    onProgressChange: function(swiper){
-        for (var i = 0; i < swiper.slides.length; i++){
-            var slide = swiper.slides[i];
-            var progress = slide.progress;
-            var translate = progress*swiper.width;
-            var opacity = 1 - Math.min(Math.abs(progress),1);
-            slide.style.opacity = opacity;
-            swiper.setTransform(slide,'translate3d('+translate+'px,0,0)');
-        }
-    },
-  });
     $ytplayer = $(".player");
     $ytplayer.YTPlayer();
 
