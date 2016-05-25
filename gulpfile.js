@@ -26,7 +26,7 @@ gulp.task('jade', function() {
       locals: YOUR_LOCALS,
       pretty: true
     }))
-    .pipe(gulp.dest(''))
+    .pipe(gulp.dest('dist'))
 });
 
 // Compile Our Sass
@@ -41,15 +41,13 @@ gulp.task('css', function() {
     return gulp.src(['bower_components/bootstrap/dist/css/bootstrap.css',
                      'bower_components/jquery.mb.ytplayer/dist/css/jquery.mb.YTPlayer.min.css',
                      'bower_components/animsition/dist/css/animsition.css',
-                     'bower_components/font-awesome/css/font-awesome.css',
                      'bower_components/owl-carousel2/dist/assets/owl.carousel.css',
                      'bower_components/owl-carousel2/dist/assets/owl.theme.default.css',
                       'css/animate.css',
-                      'css/style.css',
-                      'css/font-awesome.min.css'
+                      'css/style.css'
                       ])
-        .pipe(concat('vendor.css'))
-        .pipe(gulp.dest('css'));
+        .pipe(concat('all.css'))
+        .pipe(gulp.dest('dist/css'));
 });
 
 // Install Bower dependecies
@@ -69,16 +67,17 @@ gulp.task('scripts', function() {
                      'js/main.js'
                      ])
         .pipe(concat('all.js'))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('dist/js'))
         .pipe(rename('all.min.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('dist/js'));
 });
 
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch('js/*.js', ['lint', 'scripts']);
     gulp.watch('scss/*.scss', ['sass']);
+    gulp.watch('css/*.css', ['css']);
     gulp.watch('*.jade', ['jade']);
 });
 

@@ -24,29 +24,26 @@ videos = [
 
 $(document).ready(function(){
 
-  $('.fa-angle-down').on('click',function(e){
-    e.preventDefault();
-    $('html, body').animate({
-        scrollTop: $("#about").offset().top
-    }, 1000, "easeInOutSine");
-  });
-
-
-    $ytplayer = $(".player");
-    $ytplayer.YTPlayer();
-
-  $('.videos-item a').on('click', function(e){
-    e.preventDefault();
-    $ytplayer.YTPChangeMovie({videoURL:$(this).attr('href'),autoPlay:true});
-    //$ytplayer.YTPPlay();
-  });
-
   $(window).on("load", function(){
     $('.loader-wrapper').fadeOut(700);
     $('.hero').fadeIn(700);
   });
 
+  // youtube
+  $ytplayer = $(".player");
+  $ytplayer.YTPlayer();
+
+  $('.videos-item a').on('click', function(e){
+    e.preventDefault();
+    $ytplayer.YTPChangeMovie({videoURL:$(this).attr('href'),autoPlay:true});
+  });
+
   //owl carousel
-  $('.owl-carousel').owlCarousel({autoplay:10000, slideSpeed:1000, loop:true, rewindNav: true});
+  $('.owl-carousel').owlCarousel({
+    autoplay:10000,
+    slideSpeed:1000,
+    loop:true,
+    rewindNav: true
+  });
 
 });

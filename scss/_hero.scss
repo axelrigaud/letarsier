@@ -1,1 +1,143 @@
 // hero
+$background-image: '../img/olympic.jpg';
+$white: #fff;
+
+.lettering-container {
+  opacity: 0.3;
+  width: 98%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+// Gradient
+
+$solid_color--color: $cyan;
+$solid_color--opacity: 0.25;
+
+$gradient--start--color: $cyan;
+$gradient--start--opacity: 0.5;
+$gradient--start--stop: auto; // Leave it on auto to skip, or add percentage or length value
+
+$gradient--end--color: $vermillon;
+$gradient--end--opacity: 0.75;
+$gradient--end--stop: auto; // Leave it on auto to skip, or add percentage or length value
+
+$gradient--direction: to top right;
+
+
+// Process settings
+// Note: Conditions prevent unnecessary information to be outputted
+$solid_color: linear-gradient(rgba($solid_color--color, $solid_color--opacity) 100%, transparent);
+// @if $solid_color--opacity <= 0
+//   $solid_color: null
+
+$gradient--start--color--processed: rgba($gradient--start--color, $gradient--start--opacity);
+// @if $gradient--start--opacity <= 0
+//   $gradient--start--color--processed: transparent
+
+$gradient--end--color--processed: rgba($gradient--end--color, $gradient--end--opacity);
+// @if $gradient--end--opacity <= 0
+//   $gradient--end--color--processed: transparent
+
+$gradient--start: #{$gradient--start--color--processed} $gradient--start--stop;
+@if $gradient--start--stop == auto {
+  $gradient--start: #{$gradient--start--color--processed}
+}
+
+
+$gradient--end: #{$gradient--end--color--processed} $gradient--end--stop;
+ @if $gradient--end--stop == auto {
+   $gradient--end: #{$gradient--end--color--processed}
+ }
+
+$gradient: linear-gradient($gradient--direction, $gradient--start, $gradient--end);
+// @if $gradient--start--opacity + $gradient--end--opacity <= 0
+//   $gradient: null
+
+.hero {
+  height: 100%;
+  width: 100%;
+  background-image: $gradient, $solid_color, url($background-image);
+  background-position: center;
+  background-size: cover;
+}
+
+// Mouse
+
+@-webkit-keyframes scroll-inner
+{
+    from
+    {
+        margin-top: 15%;
+
+        opacity: 1;
+    }
+    to
+    {
+        margin-top: 75%;
+
+        opacity: 0;
+    }
+}
+@keyframes scroll-inner
+{
+    from
+    {
+        margin-top: 15%;
+
+        opacity: 1;
+    }
+    to
+    {
+        margin-top: 75%;
+
+        opacity: 0;
+    }
+}
+div.mouse-container
+{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    display: block;
+
+    height: 50px;
+
+    -webkit-transform: translate(-50%, 8px);
+            transform: translate(-50%, 8px);
+}
+div.mouse
+{
+    position: relative;
+
+    display: block;
+
+    width: 20px;
+    height: 30px;
+    margin: 0 auto;
+
+    border: solid 1px #fff;
+    border-radius: 8px;
+
+    span.scroll-down
+    {
+        display: block;
+
+        width: 4px;
+        height: 4px;
+        margin: 15% auto auto;
+
+        -webkit-animation: scroll-inner 1.5s;
+                animation: scroll-inner 1.5s;
+        -webkit-animation-timing-function: ease;
+                animation-timing-function: ease;
+        -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+
+        border-radius: 50%;
+        background: $white;
+    }
+}
