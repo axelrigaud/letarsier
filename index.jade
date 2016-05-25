@@ -28,105 +28,17 @@ html
       })(window,document,'script','dataLayer','GTM-MNBNQ9');
     // End Google Tag Manager
 
-    .loader-wrapper
-      .loader
-        .stick1
-        .stick2
-        .stick3
-        .stick4
-    section.hero
-      h1
-        | Le Tarsier
-      .lettering-container
-        include dist/img/lettering.svg
-      .mouse-container
-        .mouse
-          span.scroll-down
+    include includes/loader.jade
+    
+    include includes/hero.jade
 
-    section#about.about.container.container-full
-      .row
-        .col-md-5.col-md-offset-1
-          h2 About
-          hr.custom-hr 
-          p.about-text
-            | Combining analog synths, live winds instruments, sansula and areal delay, Axel Rigaud (a.k.a. Le Tarsier) constructs overwhelming soundscapes in real time, plunging his audiences into a hybrid musical universe where electronic and acoustic mediums mesh as one. 
-            | Exploring the very limits of what a single musician can do alone, his aim is make each performance an opportunity for risk by never relying on pre-recorded audio. This approach allows every performance to vary noticeably from one venue to the next.
+    include includes/about.jade
+    
+    include includes/videos.jade
 
-            a(href='http://www.jazzmagazine.com/index.php/le-jazz-live/1-le-jazz-live/892-concert-electronique-de-salon-chez-axel-rigaud') Concert Review (french)     
-          a.ghost-button(href='https://dl.dropboxusercontent.com/u/22402304/Tarsier%20CP%20english.pdf')
-            span More Info (EN)    
-          a.ghost-button(href='https://dl.dropboxusercontent.com/u/22402304/Tarsier%20CP%20fran%C3%A7ais.pdf')
-            span Plus d&apos;infos(FR) 
-          a.ghost-button(href='https://dl.dropboxusercontent.com/u/22402304/photopack.zip')
-            span Photopack
-        .col-md-5
-          .about-pic-container
-    section.container.videos.dark
-      h2 Videos
-      hr.custom-hr.dark
-      #P1.player(style='height:600px', data-property="{videoURL:'http://youtu.be/I2M0UZMi8D8',containment:'self',mute:false,autoPlay:false,loop:false,opacity:.8}")
-      .videos-list.row
-        .videos-item.col-sm-4.col-xs-6
-          figure.video-figure(style="background-image: url('http://img.youtube.com/vi/I2M0UZMi8D8/hqdefault.jpg');")
-            figcaption
-              a.video-link.youtube(href='http://www.youtube.com/watch?v=I2M0UZMi8D8')   
-              div
-                h2.video-title
-                  | Live 
-                  span anticaf&eacute;  
-        .videos-item.col-sm-4.col-xs-6
-          figure.video-figure(style="background-image: url('http://img.youtube.com/vi/vbJi8L-MkRg/hqdefault.jpg');")
-            figcaption
-              a.video-link.youtube(href='http://www.youtube.com/watch?v=vbJi8L-MkRg')           
-              div
-                h2.video-title Clouds became green
-        .videos-item.col-sm-4.col-xs-6
-          figure.video-figure(style="background-image: url('http://img.youtube.com/vi/3DkjC_Anyc0/hqdefault.jpg');")
-            figcaption
-              a.video-link.youtube(href='http://www.youtube.com/watch?v=3DkjC_Anyc0')      
-              div
-                h2.video-title Emerge
-        .videos-item.col-sm-4.col-xs-6
-          figure.video-figure(style="background-image: url('http://img.youtube.com/vi/-DCnGMV1ZGQ/hqdefault.jpg');")
-            figcaption
-              a.video-link.youtube(href='http://www.youtube.com/watch?v=-DCnGMV1ZGQ')      
-              div
-                h2.video-title Night Howl
-    section.container.ep
-      h2 The EP
-      hr.custom-hr
-      .row
-        .col-sm-5
-          a(href='https://letarsier.bandcamp.com/')
-            .artwork-container 
-        .col-sm-7
-          p
-            | This EP has been made between December 2014 and April 2015. Between each tracks you will hear the same crowd sound transitioning from one tune to another. This sound has been recorded in Gare de l&apos;Est (Paris), where I used to wait a lot during the days I started composing this EP.
-            | I hope you will enjoy.
-          p You can support the project by buying it on Bandcamp or simply sharing it over social networks
-          a.ghost-button(href='https://letarsier.bandcamp.com/')
-            span Bandcamp     
-          a.ghost-button(href='https://soundcloud.com/letarsier/sets/ep-masteris')
-            span Soundcloud
-    section.container.shows.dark
-      h2 Shows
-      hr.custom-hr.dark
-      .owl-carousel
-        div
-          img(src="img/shows/peniche.jpg")
-        div
-          img(src="img/shows/lab.jpg")
-        div
-          img(src="img/shows/labnb.jpg")
-        div
-          img(src="img/shows/moussay.jpg")
-        div
-          img(src="img/shows/zorba.jpg")
-        div
-          img(src="img/shows/anticafe.jpg")
-      .row
-        a(href="http://www.songkick.com/artists/8634849" class="songkick-widget" data-theme="light" data-track-button="on" data-detect-style="true" data-font-color="#FFF" data-background-color="transparent")
-          |Le Tarsier tour dates
+    include includes/ep.jade
+            
+    include includes/shows.jade
 
     nav.nav
       ul.nav-list

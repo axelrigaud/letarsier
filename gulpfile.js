@@ -78,7 +78,7 @@ gulp.task('watch', function() {
     gulp.watch('js/*.js', ['lint', 'scripts']);
     gulp.watch('scss/*.scss', ['sass']);
     gulp.watch('css/*.css', ['css']);
-    gulp.watch('*.jade', ['jade']);
+    gulp.watch(['*.jade','includes/*.jade'], ['jade']);
 });
 
 // Default Task
