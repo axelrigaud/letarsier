@@ -1,0 +1,19 @@
+.shows {
+  background: $gradient, $solid_color;
+}
+
+.gigs__table {
+  width: 100%;
+}
+
+.gigs__row {
+  width: 100%;
+  td {
+    color: white;
+    font-family: $font-title;
+  }
+}
+
+.gigs__location {
+  text-transform: uppercase;
+}
