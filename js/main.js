@@ -47,12 +47,4 @@ $(document).ready(function(){
     $ytplayer.YTPChangeMovie({videoURL:$(this).attr('href'),autoPlay:true});
   });
 
-  //owl carousel
-  $('.owl-carousel').owlCarousel({
-    autoplay:10000,
-    slideSpeed:1000,
-    loop:true,
-    rewindNav: true
-  });
-
 });
