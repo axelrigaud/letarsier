@@ -11,24 +11,22 @@
   }
   transition: 0.2s;
   border-radius: 3px;
-}
-
-.ghost-button:hover {
-  background: #2d2d2d;
-  span {color: #fff;}
-  text-decoration: none;
-}
-
-.ghost-button.inverse {
-  border-color:white;
-  span {
-    color:white;
+  &:hover {
+    background: #2d2d2d;
+    span {color: #fff;}
+    text-decoration: none;
   }
-}
-.ghost-button.inverse:hover {
-  background: #FFF;
-  span {color: #2d2d2d;}
-  text-decoration: none;
+  &.inverse {
+    border-color:white;
+    span {
+      color:white;
+    }
+    &:hover {
+      background: #FFF;
+      span {color: #2d2d2d;}
+      text-decoration: none;
+    }
+  }
 }
 
 .custom-hr{
@@ -41,6 +39,7 @@
     @media (min-width:1000px) {
     width: 200px;
   }
+  &.dark {
+    border-color: #FFF;
+  }
 }
-
-

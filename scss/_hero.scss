@@ -1,6 +1,5 @@
 // hero
 $background-image: '../img/olympic.jpg';
-$white: #fff;
 
 .lettering-container {
   opacity: 0.3;
@@ -30,22 +29,24 @@ $gradient--direction: to top right;
 // Process settings
 // Note: Conditions prevent unnecessary information to be outputted
 $solid_color: linear-gradient(rgba($solid_color--color, $solid_color--opacity) 100%, transparent);
-// @if $solid_color--opacity <= 0
-//   $solid_color: null
+@if $solid_color--opacity <= 0 {
+  $solid_color: null
+}
 
 $gradient--start--color--processed: rgba($gradient--start--color, $gradient--start--opacity);
-// @if $gradient--start--opacity <= 0
-//   $gradient--start--color--processed: transparent
+@if $gradient--start--opacity <= 0 {
+  $gradient--start--color--processed: transparent
+}
 
 $gradient--end--color--processed: rgba($gradient--end--color, $gradient--end--opacity);
-// @if $gradient--end--opacity <= 0
-//   $gradient--end--color--processed: transparent
+@if $gradient--end--opacity <= 0 {
+  $gradient--end--color--processed: transparent
+}
 
 $gradient--start: #{$gradient--start--color--processed} $gradient--start--stop;
 @if $gradient--start--stop == auto {
   $gradient--start: #{$gradient--start--color--processed}
 }
-
 
 $gradient--end: #{$gradient--end--color--processed} $gradient--end--stop;
  @if $gradient--end--stop == auto {
@@ -53,8 +54,9 @@ $gradient--end: #{$gradient--end--color--processed} $gradient--end--stop;
  }
 
 $gradient: linear-gradient($gradient--direction, $gradient--start, $gradient--end);
-// @if $gradient--start--opacity + $gradient--end--opacity <= 0
-//   $gradient: null
+@if $gradient--start--opacity + $gradient--end--opacity <= 0 {
+  $gradient: null
+}
 
 .hero {
   height: 100%;
