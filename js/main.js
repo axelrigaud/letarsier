@@ -24,9 +24,18 @@ videos = [
 
 $(document).ready(function(){
 
-  $(window).on("load", function(){
+  $window = $(window);
+  $window.on("load", function(){
     $('.loader-wrapper').fadeOut(700);
     $('.hero').fadeIn(700);
+  });
+
+  //about
+  $aboutLeft = $('.about-left');
+  $aboutPic = $('.about-pic-container');
+  $window.on('resize load', function(){
+    heightToMatch = $aboutLeft.height();
+    $aboutPic.css('height', heightToMatch);
   });
 
   // youtube

@@ -1,20 +1,15 @@
 //about
-
-#about{
-	background:#f1f1f1;
-}
+$background-image: url('../img/heavy.jpg');
 
 .about-text{
   line-height: 20px;
   font-size: 12px;
-  color: #8B8B8B;
   letter-spacing: 1px;
 }
 
 .about-pic-container{
-  background: url('../img/lake2-retina.jpg') center center;
+
+  background: $gradient, $solid_color, $background-image center center;
   background-size: cover;
   height: 300px;
 }
-
-

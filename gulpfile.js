@@ -67,10 +67,10 @@ gulp.task('scripts', function() {
                      'js/main.js'
                      ])
         .pipe(concat('all.js'))
-        .pipe(gulp.dest('dist/js'))
-        .pipe(rename('all.min.js'))
-        .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
+        // .pipe(rename('all.min.js'))
+        // .pipe(uglify())
+        // .pipe(gulp.dest('dist/js'));
 });
 
 // Watch Files For Changes

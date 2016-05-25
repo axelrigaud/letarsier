@@ -53,3 +53,24 @@ section {
     margin-left: 4%;
   }
 }
+
+.cyan {
+  background-color: rgba($cyan, .5);
+  h2 {
+    color: $vermillon;
+  }
+  .custom-hr {
+    border-color: $vermillon;
+  }
+}
+
+.vermillon {
+  background-color: rgba($vermillon, .7);
+  .ghost-button {
+    &:hover {
+      background: rgba($cyan, .4);
+      text-decoration: none;
+      border-color: white;
+    }
+  }
+}
