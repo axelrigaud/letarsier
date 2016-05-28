@@ -47,4 +47,17 @@ $(document).ready(function(){
     $ytplayer.YTPChangeMovie({videoURL:$(this).attr('href'),autoPlay:true});
   });
 
+  //ga
+  $('a').on('click', function(e){
+    trackOutboundLink($(this).attr('href'));
+  });
+
+  var trackOutboundLink = function(url) {
+    ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+      function () {
+      document.location = url;
+      }
+    });
+  }
+
 });
