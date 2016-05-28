@@ -27,7 +27,9 @@ $(document).ready(function(){
   $window = $(window);
   $window.on("load", function(){
     $('.loader-wrapper').fadeOut(700);
-    $('.hero').fadeIn(700);
+    $('.hero').fadeIn(700, function(){
+      $('.lettering-container').addClass('fade-in');
+    });
   });
 
   //about
