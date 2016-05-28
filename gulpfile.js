@@ -41,9 +41,6 @@ gulp.task('css', function() {
     return gulp.src(['bower_components/bootstrap/dist/css/bootstrap.css',
                      'bower_components/jquery.mb.ytplayer/dist/css/jquery.mb.YTPlayer.min.css',
                      'bower_components/animsition/dist/css/animsition.css',
-                     'bower_components/owl-carousel2/dist/assets/owl.carousel.css',
-                     'bower_components/owl-carousel2/dist/assets/owl.theme.default.css',
-                      'css/animate.css',
                       'css/style.css'
                       ])
         .pipe(concat('all.css'))
