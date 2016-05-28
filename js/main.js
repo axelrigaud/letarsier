@@ -32,6 +32,20 @@ $(document).ready(function(){
     });
   });
 
+  // waypoints
+  function setHrWaypoint(id) {
+    var hrWaypoint = new Waypoint({
+      element: document.getElementById(id),
+      handler: function(direction) {
+        $('#'+id).addClass('full-width');
+      },
+      offset: '70%'
+    });
+  }
+  setHrWaypoint('about-hr');
+  setHrWaypoint('shows-hr');
+  setHrWaypoint('ep-hr');
+
   //about
   $aboutLeft = $('.about-left');
   $aboutPic = $('.about-pic-container');

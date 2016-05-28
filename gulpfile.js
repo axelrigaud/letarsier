@@ -60,7 +60,7 @@ gulp.task('scripts', function() {
                      'bower_components/bootstrap/dist/js/bootstrap.js',
                      'bower_components/jquery.easing/js/jquery.easing.js',
                      'bower_components/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js',
-                     'bower_components/owl-carousel2/dist/owl.carousel.js',
+                     'bower_components/waypoints/lib/jquery.waypoints.js',
                      'js/main.js'
                      ])
         .pipe(concat('all.js'))
