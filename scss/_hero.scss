@@ -14,6 +14,22 @@ $background-image: '../img/olympic.jpg';
   }
 }
 
+// subtle-blink
+
+.subtle-blink {
+  animation: subtle-blink infinite alternate;
+  animation-duration: 1.3s;
+}
+
+@keyframes subtle-blink {
+  from {
+    opacity: .2;
+  }
+  to {
+    opacity: .3;
+  }
+}
+
 // Gradient
 
 $solid_color--color: $cyan;

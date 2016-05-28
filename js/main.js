@@ -25,10 +25,14 @@ videos = [
 $(document).ready(function(){
 
   $window = $(window);
-  $window.on("load", function(){
-    $('.loader-wrapper').fadeOut(700);
-    $('.hero').fadeIn(700, function(){
+  var fadeTime = 700;
+  $window.on('load', function(){
+    $('.loader-wrapper').fadeOut(fadeTime);
+    $('.hero').fadeIn(fadeTime, function(){
       $('.lettering-container').addClass('fade-in');
+      setTimeout(function(){
+        $('.lettering-container').addClass('subtle-blink');
+      },fadeTime*2);
     });
   });
 
