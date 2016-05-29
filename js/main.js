@@ -92,8 +92,8 @@ $(document).ready(function(){
     targetSize = Math.sqrt(targetSize);
 
     $over.css({
-      'width' : targetSize+10,
-      'height' : targetSize+10
+      'width' : targetSize+150,
+      'height' : targetSize+150
     });
   }
 

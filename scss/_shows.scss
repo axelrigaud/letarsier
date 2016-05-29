@@ -5,6 +5,9 @@
 
 .gigs__table {
   width: 100%;
+  @media (max-width: 600px) {
+    font-size: 12px;
+  }
 }
 
 .gigs__row {
