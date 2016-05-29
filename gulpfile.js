@@ -8,7 +8,8 @@ var jshint = require('gulp-jshint'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
     jade = require('gulp-jade'),
-    bower = require('gulp-bower');
+    bower = require('gulp-bower'),
+    autoprefixer = require('gulp-autoprefixer');
 
 // Lint Task
 gulp.task('lint', function() {
@@ -35,6 +36,16 @@ gulp.task('sass', function() {
         .pipe(sass())
         .pipe(gulp.dest('css'));
 });
+
+// autoprefixer
+gulp.task('prefixer', function () {
+	return gulp.src('css/style.css')
+		.pipe(autoprefixer({
+			browsers: ['last 2 versions'],
+			cascade: false
+		})).pipe(gulp.dest('css'));
+});
+
 
 // Concatenate CSS
 gulp.task('css', function() {
@@ -74,9 +85,10 @@ gulp.task('scripts', function() {
 gulp.task('watch', function() {
     gulp.watch('js/*.js', ['lint', 'scripts']);
     gulp.watch('scss/*.scss', ['sass']);
+    gulp.watch('css/main.css', ['prefixer']);
     gulp.watch('css/*.css', ['css']);
     gulp.watch(['*.jade','includes/*.jade'], ['jade']);
 });
 
 // Default Task
-gulp.task('default', ['bower', 'scripts', 'sass', 'css', 'jade', 'watch']);
+gulp.task('default', ['bower', 'scripts', 'sass', 'prefixer', 'css', 'jade', 'watch']);
