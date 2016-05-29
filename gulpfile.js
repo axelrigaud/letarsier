@@ -41,7 +41,7 @@ gulp.task('sass', function() {
 gulp.task('prefixer', function () {
 	return gulp.src('css/style.css')
 		.pipe(autoprefixer({
-			browsers: ['last 2 versions'],
+			browsers: ['last 3 versions'],
 			cascade: false
 		})).pipe(gulp.dest('css'));
 });
