@@ -86,3 +86,53 @@ footer {
     opacity: 1;
   }
 }
+.stay-in-touch {
+  font-family: $font-title;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 24px;
+  opacity: 0;
+}
+
+.stay-in-touch--reveal {
+  animation: stay-in-touch--reveal forwards .8s;
+}
+
+@keyframes stay-in-touch--reveal {
+  from {
+    opacity: 0;
+    letter-spacing: 0px;
+  }
+  to {
+    opacity: 1;
+    letter-spacing: 6px;
+  }
+}
+
+.stay-in-touch--shake {
+  animation: stay-in-touch--shake infinite alternate 1s;
+}
+
+@keyframes stay-in-touch--shake {
+  0% {
+    transform: translateX(0) rotate(0);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(0) rotate(0);
+    opacity: 1;
+  }
+  85% {
+    transform: translateX(-7px) rotate(2deg);
+    opacity: 1;
+  }
+  95% {
+    transform: translateX(7px) rotate(-2deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0px) rotate(0);
+    opacity: 1;
+  }
+}

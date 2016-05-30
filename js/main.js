@@ -68,6 +68,12 @@ $(document).ready(function(){
     setTimeout(function(){
       $('#soundcloud').addClass('appear-from-bottom');
     },offsetSocial*3);
+    setTimeout(function(){
+      $('.stay-in-touch').addClass('stay-in-touch--reveal');
+    },offsetSocial*4);
+    setTimeout(function(){
+      $('.stay-in-touch').addClass('stay-in-touch--shake');
+    },offsetSocial*5);
   }
 
   //about
