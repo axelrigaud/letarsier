@@ -1,7 +1,8 @@
-.shows {
+.concerts {
   position: relative;
   overflow: hidden;
-  background: $dark-blue-green;
+  background-image: url('../img/grandpalais.jpg');
+  background-size: cover;
 
   h2 {
     color: #fff;

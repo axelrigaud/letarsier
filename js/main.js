@@ -44,7 +44,7 @@ $(document).ready(function(){
     });
   }
   setHrWaypoint('about-hr');
-  setHrWaypoint('shows-hr');
+  setHrWaypoint('concerts-hr');
   setHrWaypoint('ep-hr');
 
   var socialWaypoint = new Waypoint({
