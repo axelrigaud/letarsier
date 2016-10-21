@@ -1,6 +1,14 @@
 .shows {
   position: relative;
   overflow: hidden;
+  background: $dark-blue-green;
+
+  h2 {
+    color: $light-blue-green;
+  }
+  hr {
+    border-color: $light-blue-green;
+  }
 }
 
 .gigs__table {
@@ -13,23 +21,13 @@
 .gigs__row {
   width: 100%;
   td {
-    color: white;
+    color: $light-blue-green;
     font-family: $font-title;
   }
 }
 
 .gigs__location {
   text-transform: uppercase;
-}
-
-.rotating-overlay {
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  top: 50%;
-  left: 50%;
-  background: $gradient;
-  animation: spin-overlay 9s infinite linear;
 }
 
 @keyframes spin-overlay {

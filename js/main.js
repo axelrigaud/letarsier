@@ -29,10 +29,7 @@ $(document).ready(function(){
   $window.on('load', function(){
     $('.loader-wrapper').fadeOut(fadeTime);
     $('.hero').fadeIn(fadeTime, function(){
-      $('.lettering-container').addClass('fade-in');
-      setTimeout(function(){
-        $('.lettering-container').addClass('subtle-blink');
-      },fadeTime*2);
+
     });
   });
 
@@ -83,27 +80,6 @@ $(document).ready(function(){
     heightToMatch = $aboutLeft.height();
     $aboutPic.css('height', heightToMatch);
   });
-
-  // spining overlay
-
-  var $over = $('.rotating-overlay'),
-      $showsSection = $('.shows'),
-      targetSize,
-      showsHeight = $showsSection.outerHeight(true),
-      showsWidth = $showsSection.width();
-
-  function setOverSize() {
-    // /summon pythagore
-    targetSize = Math.pow(showsHeight,2) + Math.pow(showsWidth,2)
-    targetSize = Math.sqrt(targetSize);
-
-    $over.css({
-      'width' : targetSize+150,
-      'height' : targetSize+150
-    });
-  }
-
-  $window.on('load resize', setOverSize);
 
   // youtube
   $ytplayer = $(".player");

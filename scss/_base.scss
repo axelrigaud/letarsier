@@ -1,6 +1,8 @@
 $cyan: rgb(0, 186, 255);
 $vermillon: rgb(255, 82, 0);
 $white: #fff;
+$dark-blue-green: #33494c;
+$light-blue-green: rgb(94, 179, 168);
 
 $font-text: 'Roboto', sans-serif;
 $font-title: 'Montserrat', sans-serif;
@@ -25,11 +27,6 @@ ul {
   text-transform: uppercase;
 }
 
-h1 {
-  text-indent: -999px;
-  position: absolute;
-}
-
 h2 {
   @media (min-width:1000px) {
     font-size: 34px;
@@ -51,16 +48,6 @@ section {
   width: 100%;
   h2, .custom-hr {
     margin-left: 4%;
-  }
-}
-
-.cyan {
-  background-color: rgba($cyan, .5);
-  h2 {
-    color: $vermillon;
-  }
-  .custom-hr {
-    border-color: $vermillon;
   }
 }
 

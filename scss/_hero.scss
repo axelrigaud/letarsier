@@ -1,87 +1,20 @@
 // hero
-$background-image: '../img/olympic.jpg';
-
-.lettering-container {
-  opacity: 0;
-  width: 98%;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
+$background-image: '../img/heavy.jpg';
+h1 {
+  font-size: 4vw;
+  color: #fff;
+  letter-spacing: 8px;
   position: absolute;
-  transition: 4s;
-  &.fade-in {
-    opacity: .3;
-  }
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-// subtle-blink
-
-.subtle-blink {
-  animation: subtle-blink infinite alternate;
-  animation-duration: 1.3s;
-}
-
-@keyframes subtle-blink {
-  from {
-    opacity: .2;
-  }
-  to {
-    opacity: .3;
-  }
-}
-
-// Gradient
-
-$solid_color--color: $cyan;
-$solid_color--opacity: 0.25;
-
-$gradient--start--color: $cyan;
-$gradient--start--opacity: 0.5;
-$gradient--start--stop: auto; // Leave it on auto to skip, or add percentage or length value
-
-$gradient--end--color: $vermillon;
-$gradient--end--opacity: 0.75;
-$gradient--end--stop: auto; // Leave it on auto to skip, or add percentage or length value
-
-$gradient--direction: to top right;
-
-
-// Process settings
-// Note: Conditions prevent unnecessary information to be outputted
-$solid_color: linear-gradient(rgba($solid_color--color, $solid_color--opacity) 100%, transparent);
-@if $solid_color--opacity <= 0 {
-  $solid_color: null
-}
-
-$gradient--start--color--processed: rgba($gradient--start--color, $gradient--start--opacity);
-@if $gradient--start--opacity <= 0 {
-  $gradient--start--color--processed: transparent
-}
-
-$gradient--end--color--processed: rgba($gradient--end--color, $gradient--end--opacity);
-@if $gradient--end--opacity <= 0 {
-  $gradient--end--color--processed: transparent
-}
-
-$gradient--start: #{$gradient--start--color--processed} $gradient--start--stop;
-@if $gradient--start--stop == auto {
-  $gradient--start: #{$gradient--start--color--processed}
-}
-
-$gradient--end: #{$gradient--end--color--processed} $gradient--end--stop;
- @if $gradient--end--stop == auto {
-   $gradient--end: #{$gradient--end--color--processed}
- }
-
-$gradient: linear-gradient($gradient--direction, $gradient--start, $gradient--end);
-@if $gradient--start--opacity + $gradient--end--opacity <= 0 {
-  $gradient: null
-}
 
 .hero {
   height: 100%;
   width: 100%;
-  background-image: $gradient, $solid_color, url($background-image);
+  background-image: url($background-image);
   background-position: center;
   background-size: cover;
 }

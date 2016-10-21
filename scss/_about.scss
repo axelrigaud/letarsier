@@ -1,5 +1,5 @@
 //about
-$background-image: url('../img/heavy.jpg');
+$background-image: url('../img/olympic.jpg');
 
 .about-text{
   line-height: 20px;
@@ -9,7 +9,7 @@ $background-image: url('../img/heavy.jpg');
 
 .about-pic-container{
 
-  background: $gradient, $solid_color, $background-image center center;
+  background: $background-image center center;
   background-size: cover;
   height: 300px;
 }
