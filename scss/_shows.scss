@@ -4,10 +4,10 @@
   background: $dark-blue-green;
 
   h2 {
-    color: $light-blue-green;
+    color: #fff;
   }
   hr {
-    border-color: $light-blue-green;
+    border-color: $soft-yellow;
   }
 }
 
@@ -20,14 +20,13 @@
 
 .gigs__row {
   width: 100%;
-  td {
-    color: $light-blue-green;
-    font-family: $font-title;
-  }
+  color: $light-blue-green;
+  font-family: $font-title;
 }
 
 .gigs__location {
   text-transform: uppercase;
+  color: $soft-yellow;
 }
 
 @keyframes spin-overlay {

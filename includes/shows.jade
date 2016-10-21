@@ -1,6 +1,36 @@
 -
   var gigs = [
     {
+      'date': 'December 9 2016',
+      'location': 'Paris',
+      'description': 'with Gabriel Auguste @ Popup du label'
+    },
+    {
+      'date': 'December 1 2016',
+      'location': 'Nancy',
+      'description': 'with Demande à la nuit'
+    },
+    {
+      'date': 'December 1 2016',
+      'location': 'Nancy',
+      'description': 'with Demande à la nuit'
+    },
+    {
+      'date': 'October 24 2016',
+      'location': 'Paris',
+      'description': 'Supersonic'
+    },
+    {
+      'date': 'October 5 2016',
+      'location': 'Annecy',
+      'description': 'with Elbi @ Brise-Glace'
+    },
+    {
+      'date': 'August 6 2016',
+      'location': 'Paris',
+      'description': 'with Elbi @ Plage Glazart'
+    },
+    {
       'date': 'July 30 2016',
       'location': 'châlons en champagne',
       'description': 'with John Grape'
@@ -14,6 +44,11 @@
       'date': 'July 28 2016',
       'location': 'châlons en champagne',
       'description': 'with Elbi'
+    },
+    {
+      'date': 'July 24 2016',
+      'location': 'Paris',
+      'description': 'Petite Halle de la Villette'
     },
     {
       'date': 'July 10 2016',
@@ -176,7 +211,7 @@ section.container.container-full.shows
               = gig.date
             td.gigs__location
               = gig.location
-            td
+            td.gigs__description
               = gig.description
             if gig.link
               td
