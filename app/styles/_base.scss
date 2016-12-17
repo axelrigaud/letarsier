@@ -13,18 +13,9 @@ html, body {
 ul {
   list-style-type: none;
 }
+h1 {
+  margin: 0;
+}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
   text-transform: uppercase;
-}
-
-h2 {
-  @media (min-width:1000px) {
-    font-size: 34px;
-  }
-  letter-spacing: 3px;
-}
-
-section {
-  padding-top: 25px;
-  padding-bottom: 80px;
 }

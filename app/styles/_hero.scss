@@ -36,8 +36,8 @@ h1 {
       margin-right: 50px;
       font-size: 20px;
       letter-spacing: 2px;
+      text-decoration: none;
       &:hover {
-        text-decoration: none;
         opacity: 1;
       }
     }
@@ -45,7 +45,7 @@ h1 {
 }
 
 .hero {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-image: url($background-image);
   background-position: center;

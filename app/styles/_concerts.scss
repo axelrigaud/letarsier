@@ -6,10 +6,22 @@
   background-blend-mode: darken;
   color: white;
   background-position: center center;
-
+  padding: 10px 20px;
+  @media (max-width:400px) {
+    padding: 20px 0;
+  }
+  h2 {
+    font-size: 50px;
+    letter-spacing: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
 
   hr {
     border-color: $soft-yellow;
+    border-width: 3px;
+    margin-bottom: 80px;
+    width: 500px;
   }
 }
 
@@ -28,13 +40,4 @@
 .gigs__location {
   text-transform: uppercase;
   color: $soft-yellow;
-}
-
-@keyframes spin-overlay {
-  from {
-    transform: translate(-50%, -50%) rotate(0);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
 }

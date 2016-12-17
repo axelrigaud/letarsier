@@ -37,20 +37,3 @@
     }
   }
 }
-
-$hr-width: 136px;
-.custom-hr{
-  margin-top: 14px;
-  margin-bottom: 40px;
-  border: 0;
-  border-top: 3px solid #000;
-  margin-left: 0;
-  width: 0;
-  transition: .3s;
-  &.dark {
-    border-color: #FFF;
-  }
-  &.full-width {
-    width: $hr-width;
-  }
-}
