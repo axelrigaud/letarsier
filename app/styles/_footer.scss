@@ -1,0 +1,64 @@
+//nav
+
+.nav {
+  text-align: center;
+  margin:20px 0 20px 0;
+  padding: 80px;
+}
+
+.nav-list {
+display:inline-block;
+}
+
+.nav-item {
+  opacity: 0.9;
+  text-transform: uppercase;
+  list-style-type: none;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin-right: 25px;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  a {
+    text-decoration: none;
+    color:#2D2D2D;
+  }
+  a:visited {
+    color:#999;
+  }
+}
+
+.social-link {
+  display:block;
+  width: 70px;
+  fill:#2D2D2D;
+  transition: 0.1s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.facebook:hover {
+  fill:#3b5998;
+}
+
+.instagram:hover{
+  fill:#3f729b;
+}
+
+.soundcloud:hover{
+  fill:#ff8800;
+}
+
+.youtube:hover {
+  fill:#cd201f;
+}
+
+//footer
+footer {
+  font-size: 12px;
+  text-align:center;
+  margin:10px 0 10px 0;
+  padding:10px;
+  background: #F0F0F0;
+}
