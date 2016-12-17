@@ -3,6 +3,7 @@
 .nav {
   text-align: center;
   margin:20px 0 20px 0;
+  padding: 80px;
 }
 
 .nav-list {
@@ -10,12 +11,14 @@ display:inline-block;
 }
 
 .nav-item {
-  opacity: 0.7;
+  opacity: 0.9;
   text-transform: uppercase;
   list-style-type: none;
   letter-spacing: 2px;
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 25px;
+  margin-left: 25px;
+  margin-bottom: 25px;
   a {
     text-decoration: none;
     color:#2D2D2D;
@@ -27,7 +30,7 @@ display:inline-block;
 
 .social-link {
   display:block;
-  width:50px;
+  width: 70px;
   fill:#2D2D2D;
   transition: 0.1s;
   &:hover {

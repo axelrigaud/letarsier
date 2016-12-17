@@ -7,6 +7,10 @@ $background-image: '../img/heavy.jpg';
   margin-left: 80px;
   margin-top: 50px;
   position: fixed;
+  @media (max-width: 600px) {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
 }
 
 h1 {
@@ -14,6 +18,9 @@ h1 {
 }
 
 .top-nav {
+  @media (max-width: 600px) {
+    display: none;
+  }
   position: fixed;
   right: 0;
   top: 0;
@@ -27,6 +34,8 @@ h1 {
       opacity: 0.7;
       transition: 0.3s;
       margin-right: 50px;
+      font-size: 20px;
+      letter-spacing: 2px;
       &:hover {
         text-decoration: none;
         opacity: 1;

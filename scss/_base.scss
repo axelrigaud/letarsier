@@ -4,16 +4,13 @@ $white: #fff;
 $dark-blue-green: #33494c;
 $light-blue-green: rgb(94, 179, 168);
 $soft-yellow: #ffe597;
-
-$font-text: 'Roboto', sans-serif;
-$font-title: 'Open Sans', sans-serif;
 $text-font: 'Open Sans', sans-serif;
 
 html, body, ul{
   margin:0;
   padding:0;
   margin:0;
-  font-family: $font-text;
+  font-family: $text-font;
   color:#333;
 }
 
@@ -25,7 +22,6 @@ ul {
   list-style-type: none;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
-  font-family: $font-title;
   text-transform: uppercase;
 }
 
@@ -39,16 +35,4 @@ h2 {
 section {
   padding-top: 25px;
   padding-bottom: 80px;
-}
-
-.dark {
-  background: #000;
-  color: #FFF;
-}
-
-.container.dark {
-  width: 100%;
-  h2, .custom-hr {
-    margin-left: 4%;
-  }
 }
