@@ -6,7 +6,8 @@ $light-blue-green: rgb(94, 179, 168);
 $soft-yellow: #ffe597;
 
 $font-text: 'Roboto', sans-serif;
-$font-title: 'Montserrat', sans-serif;
+$font-title: 'Open Sans', sans-serif;
+$text-font: 'Open Sans', sans-serif;
 
 html, body, ul{
   margin:0;
@@ -49,16 +50,5 @@ section {
   width: 100%;
   h2, .custom-hr {
     margin-left: 4%;
-  }
-}
-
-.vermillon {
-  background-color: rgba($vermillon, .7);
-  .ghost-button {
-    &:hover {
-      background: rgba($cyan, .4);
-      text-decoration: none;
-      border-color: white;
-    }
   }
 }

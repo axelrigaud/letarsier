@@ -1,12 +1,13 @@
 .concerts {
   position: relative;
   overflow: hidden;
-  background-image: url('../img/grandpalais.jpg');
+  background: url(../img/grandpalais.jpg), #5ba4ff;
   background-size: cover;
+  background-blend-mode: darken;
+  color: white;
+  background-position: center center;
 
-  h2 {
-    color: #fff;
-  }
+
   hr {
     border-color: $soft-yellow;
   }
@@ -14,6 +15,7 @@
 
 .gigs__table {
   width: 100%;
+  color:white;
   @media (max-width: 600px) {
     font-size: 12px;
   }
@@ -21,7 +23,6 @@
 
 .gigs__row {
   width: 100%;
-  color: $light-blue-green;
   font-family: $font-title;
 }
 
