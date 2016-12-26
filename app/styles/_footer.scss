@@ -2,8 +2,6 @@
 
 .nav {
   text-align: center;
-  margin:20px 0 20px 0;
-  padding: 80px;
 }
 
 .nav-list {
@@ -16,9 +14,8 @@ display:inline-block;
   list-style-type: none;
   letter-spacing: 2px;
   display: inline-block;
-  margin-right: 25px;
-  margin-left: 25px;
-  margin-bottom: 25px;
+  padding: 10px;
+
   a {
     text-decoration: none;
     color:#2D2D2D;
@@ -30,8 +27,8 @@ display:inline-block;
 
 .social-link {
   display:block;
-  width: 70px;
-  fill:#2D2D2D;
+  width: 50px;
+  fill: white;
   transition: 0.1s;
   &:hover {
     transform: scale(1.1);
@@ -56,9 +53,19 @@ display:inline-block;
 
 //footer
 footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
   font-size: 12px;
   text-align:center;
-  margin:10px 0 10px 0;
-  padding:10px;
-  background: #F0F0F0;
+  padding: 20px;
+  background: #2e3036;
+  color: white;
+  font-size: 14px;
+  a {
+    color: white;
+  }
+  p {
+    opacity: 0.9;
+  }
 }

@@ -1,17 +1,20 @@
 .concerts {
   position: relative;
   overflow: hidden;
-  background: url(../images/grandpalais.jpg), #365986;
+  background: url(../images/grandpalais.jpg), $dark-blue;
   background-size: cover;
   background-blend-mode: darken;
   color: white;
   background-position: center center;
   padding: 10px 20px;
-  @media (max-width:400px) {
+  @media (max-width: $small) {
     padding: 20px 0;
   }
   h2 {
     font-size: 50px;
+    @media(max-width: $small) {
+      font-size: 34px;
+    }
     letter-spacing: 10px;
     text-align: center;
     margin-bottom: 30px;
@@ -21,15 +24,16 @@
     border-color: $soft-yellow;
     border-width: 3px;
     margin-bottom: 80px;
-    width: 500px;
+    width: 45%;
   }
 }
 
 .gigs__table {
   width: 100%;
   color:white;
-  @media (max-width: 600px) {
+  @media (max-width: $small) {
     font-size: 12px;
+    padding: 0 30px;
   }
 }
 
@@ -40,4 +44,10 @@
 .gigs__location {
   text-transform: uppercase;
   color: $soft-yellow;
+}
+
+@media (max-width: $small) {
+  .gigs__description {
+    display: none;
+  }
 }

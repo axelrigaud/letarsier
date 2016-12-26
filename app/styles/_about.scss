@@ -2,6 +2,9 @@
 
 .about {
   padding: 80px 50px;
+  @media (max-width: $small) {
+    padding: 40px 30px;
+  }
   text-align: center;
 }
 
@@ -13,4 +16,8 @@
   margin-bottom: 50px;
   line-height: 35px;
   letter-spacing: 1.5px;
+  @media (max-width: $small) {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
 }
