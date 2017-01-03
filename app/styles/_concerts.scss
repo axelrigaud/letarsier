@@ -21,8 +21,9 @@
   }
 
   hr {
-    border-color: $soft-yellow;
-    border-width: 3px;
+    background: $soft-yellow;
+    height: 3px;
+    border: 0;
     margin-bottom: 80px;
     width: 45%;
   }

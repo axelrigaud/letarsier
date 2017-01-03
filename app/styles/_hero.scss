@@ -48,7 +48,7 @@ h1 {
   height: 100%;
   width: 100%;
   background-image: url($background-image);
-  background-position: center;
+  background-position: center 0;
   background-size: cover;
 }
 
@@ -126,6 +126,6 @@ div.mouse
                 animation-iteration-count: infinite;
 
         border-radius: 50%;
-        background: $white;
+        background: white;
     }
 }
