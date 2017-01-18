@@ -1,9 +1,12 @@
 {
   "concerts": [
-    {"date" : "February 25 2017", "location": "Brussels", "details": "with Elbi"},
+    {"date" : "March 29 2017", "location": "Paris", "details": "with Elbi @ Maison Sage"},
+    {"date" : "February 25 2017", "location": "Paris", "details": "Elbi Release Party"},
     {"date" : "February 24 2017", "location": "Brussels", "details": "with Elbi"},
     {"date" : "February 23 2017", "location": "Liege", "details": "with Elbi"},
     {"date" : "February 2 2017", "location": "Lille", "details": "with Demande à la nuit"},
+    {"date" : "January 23 2017", "location": "Paris", "details": "Solo @ Supersonic"},
+    {"date" : "January 14 2017", "location": "Paris", "details": "with Elbi @ Petite Halle de la Villette"},
     {"date" : "December 10 2016", "location": "Paris", "details": "with Elbi @ Supersonic"},
     {"date" : "December 9 2016", "location": "Paris", "details": "@ Popup du label"},
     {"date" : "December 2 2016", "location": "St Ouen", "details": "Solo @ Euphonia"},

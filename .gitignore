@@ -1,5 +1,6 @@
 ### Sass ###
 .sass-cache/
+.tmp/
 *.css.map
 bower_components/
 node_modules/
