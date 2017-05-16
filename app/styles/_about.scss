@@ -1,7 +1,7 @@
 //about
 
 .about {
-  padding: 80px 50px;
+  padding: 80px 180px;
   @media (max-width: $small) {
     padding: 40px 30px;
   }
@@ -9,12 +9,12 @@
 }
 
 .about-text{
-  font-size: 18px;
+  font-size: 21px;
   color: black;
-  opacity: 0.6;
+  opacity: 0.95;
   margin-bottom: 50px;
+  letter-spacing: 2px;
   line-height: 35px;
-  letter-spacing: 1.5px;
   @media (max-width: $small) {
     font-size: 14px;
     letter-spacing: 1px;

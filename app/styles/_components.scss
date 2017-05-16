@@ -1,17 +1,16 @@
 .ghost-button {
   font-family: $text-font;
-  border: 2px solid #2d2d2d;
+  border: 2px solid rgb(17,17,17);
   display: inline-block;
   text-decoration: none;
-  padding: 15px 26px;
+  padding: 19px 60px;
   margin-bottom: 14px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 7px;
+  margin-left: 7px;
   transition: .2s;
-  border-radius: 4px;
   opacity: 0.8;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 3px;
   @media (max-width: $small) {
     font-size: 13px;
@@ -20,13 +19,12 @@
   }
   span {
     transition: .2s;
-    color: #2d2d2d;
+    color: rgb(17,17,17);
   }
   transition: .2s;
-  border-radius: 3px;
   &:hover {
-    border-color: #2d2d2d;
-    background: #2d2d2d;
+    border-color: rgb(17,17,17);
+    background: black;
     span {color: #fff;}
     text-decoration: none;
   }

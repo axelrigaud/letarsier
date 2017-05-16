@@ -1,6 +1,10 @@
 {
   "concerts": [
+    {"date" : "April 8 2017", "location": "Paris", "details": "with Elbi @ Point Ephemere"},
+    {"date" : "April 1 2017", "location": "La Clusaz", "details": "with Elbi"},
     {"date" : "March 29 2017", "location": "Paris", "details": "with Elbi @ Maison Sage"},
+    {"date" : "March 17 2017", "location": "Paris", "details": "with Elbi @ France Inter"},
+    {"date" : "March 9 2017", "location": "Paris", "details": "Solo @ Supersonic"},
     {"date" : "February 25 2017", "location": "Paris", "details": "Elbi Release Party"},
     {"date" : "February 24 2017", "location": "Brussels", "details": "with Elbi"},
     {"date" : "February 23 2017", "location": "Liege", "details": "with Elbi"},

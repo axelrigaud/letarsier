@@ -49,5 +49,11 @@ $(document).ready(function () {
   }();
 
   App.init();
+
+  $('.hero').scroll(function () {
+    console.log('scroll s');
+    var y = $(this).scrollTop();
+    $(this).css('background-position', 'center ' + parseInt(-y / 10) + 'px');
+  });
 });
 //# sourceMappingURL=main.js.map

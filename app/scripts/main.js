@@ -5,11 +5,7 @@ $(document).ready(function(){
       var items = [];
       $.getJSON("/concerts.json", function (data) {
         $.each( data.concerts, function (key, val) {
-          items.push('<tr class="gigs__row">
-                        <td class="gigs__date">'+val.date+'</td>
-                        <td class="gigs__location">'+val.location+'</td>
-                        <td class="gigs__description">'+val.details+'</td>
-                      </tr>');
+          items.push('<tr class="gigs__row"><td class="gigs__date">'+val.date+'</td><td class="gigs__location">'+val.location+'</td><td class="gigs__description">'+val.details+'</td></tr>');
         });
         $( "<tbody/>", {
           html: items.join( "" )
